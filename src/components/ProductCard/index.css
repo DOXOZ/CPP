@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #fff; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  margin: 15px; 
+  cursor: pointer; 
+  padding: 10px;
+  font-family: "Inter";
+}
+
+.ProductCard:hover {
+  transform: translateY(-5px); /* Поднимаем карточку при наведении */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+}
+
+.ProductCard img {
+  width: 100%; 
+  height: 180px; 
+  object-fit: contain; 
+}
+
+.ProductCard-category {
+  font-size: 14px;
+  color: #0056b3;
+  margin-bottom: 8px; 
+}
+
+.ProductCard h4 {
+  font-size: 14px; 
+  font-weight: bold; 
+  margin: 10px 0;
+}
+
+.ProductCard-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ProductCard-button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px; 
+  font-weight:400;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.3s ease; 
+  opacity: 0; 
+  visibility: hidden; 
+}
+
+.ProductCard:hover .ProductCard-button {
+  opacity: 1; 
+  visibility: visible;
+}
+
+.ProductCard-button:hover {
+  background-color: #0056b3;
+}
+
+.ProductCard-pricebutton {
+  display:flex;
+  justify-content: space-between;
+}
